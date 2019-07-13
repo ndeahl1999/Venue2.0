@@ -1,9 +1,21 @@
 <body>
-  <div style="text-align:center" class="center">
+  <div style="text-align:left" class="center">
     <br><br>
     <div class="row">
-      <h2 class="col-md-6">My Courses</h2>
-      <h2 class="col-md-6">Upcoming Events</h2>
+      <div class="col-xs-12 col-md-6 col-sm-8 col-lg-6">
+        <h2>My Courses
+          <span class="pull-right">
+            <button class="btn btn-primary btn-small">
+              +
+            </button>
+          </span>
+        </h2>
+      </div>
+      <div class="col-md-6 col-md-offset-2">
+        <h2>
+          Upcoming Events
+        </h2>
+      </div>
     </div>
     <div class="row">
       <div class="col-md-6 col-md-offset-2 overflow-auto grid-height">
@@ -77,11 +89,11 @@
       </div>
       <div class="col-md-6 col-md-offset-2 overflow-auto grid-height">
         <mat-grid-list cols="1" rowHeight="225px">
-          <mat-grid-tile [colspan]="1" [rowspan]="1">1</mat-grid-tile>
-          <mat-grid-tile [colspan]="1" [rowspan]="1">2</mat-grid-tile>
-          <mat-grid-tile [colspan]="1" [rowspan]="1">3</mat-grid-tile>
-          <mat-grid-tile [colspan]="1" [rowspan]="1">4</mat-grid-tile>
-          <mat-grid-tile [colspan]="1" [rowspan]="1">5</mat-grid-tile>
+          <mat-grid-tile class="event" [colspan]="1" [rowspan]="1">1</mat-grid-tile>
+          <mat-grid-tile class="event" [colspan]=" 1" [rowspan]="1">2</mat-grid-tile>
+          <mat-grid-tile class="event" [colspan]=" 1" [rowspan]="1">3</mat-grid-tile>
+          <mat-grid-tile class="event" [colspan]=" 1" [rowspan]="1">4</mat-grid-tile>
+          <mat-grid-tile class="event" [colspan]=" 1" [rowspan]="1">5</mat-grid-tile>
         </mat-grid-list>
       </div>
     </div>
