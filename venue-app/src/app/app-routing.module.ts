@@ -6,6 +6,7 @@ import { SignupComponent } from './signup/signup.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CoursesComponent } from './courses/courses.component';
 import { EventsComponent } from './events/events.component';
+import { RequestsComponent } from './requests/requests.component';
 
 
 //import routable components
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'courses', component: CoursesComponent },
-  { path: 'events', component: EventsComponent }
+  { path: 'events', component: EventsComponent },
+  { path: 'requests', component: RequestsComponent }
 ];
 
 @NgModule({

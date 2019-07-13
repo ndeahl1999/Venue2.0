@@ -12,6 +12,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SignupComponent } from './signup/signup.component';
 import { CoursesComponent } from './courses/courses.component';
 import { EventsComponent } from './events/events.component';
+import { RequestsComponent } from './requests/requests.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { EventsComponent } from './events/events.component';
     DashboardComponent,
     SignupComponent,
     CoursesComponent,
-    EventsComponent
+    EventsComponent,
+    RequestsComponent
   ],
   imports: [
     BrowserModule,
