@@ -1,28 +1,41 @@
-<div class="center">
-  <br><br>
-  <div class="row">
-    <h1 class="col-md-6">Upcoming Events</h1>
-    <h1 class="col-md-6">Selected Event</h1>
-  </div>
-  <div class="row">
-    <div class="col-md-6 col-md-offset-2 overflow-auto grid-height">
-      <mat-grid-list cols="1" rowHeight="225px">
-        <mat-grid-tile [colspan]="1" [rowspan]="1">1</mat-grid-tile>
-        <mat-grid-tile [colspan]="1" [rowspan]="1">2</mat-grid-tile>
-        <mat-grid-tile [colspan]="1" [rowspan]="1">3</mat-grid-tile>
-        <mat-grid-tile [colspan]="1" [rowspan]="1">4</mat-grid-tile>
-        <mat-grid-tile [colspan]="1" [rowspan]="1">5</mat-grid-tile>
-      </mat-grid-list>
+<body>
+  <div class="center">
+    <br><br>
+    <div class="row">
+      <h1 class="col-md-6">Upcoming Events</h1>
+      <h1 class="col-md-6">Selected Event</h1>
     </div>
-    <div class="col-md-6 col-md-offset-2 overflow-auto grid-height">
-      <mat-grid-list cols="1" rowHeight="225px">
-        <mat-grid-tile [colspan]="1" [rowspan]="1">1</mat-grid-tile>
-      </mat-grid-list>
-      <h2>Courses Attending Event:</h2>
-      <p>Course 1</p>
-      <p>Course 2</p>
-      <p>Course 3</p>
-      <button class="btn btn-primary">Upload New Submission</button>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-2 overflow-auto grid-height">
+        <mat-grid-list cols="1" rowHeight="225px">
+          <mat-grid-tile [colspan]="1" [rowspan]="1">1</mat-grid-tile>
+          <mat-grid-tile [colspan]="1" [rowspan]="1">2</mat-grid-tile>
+          <mat-grid-tile [colspan]="1" [rowspan]="1">3</mat-grid-tile>
+          <mat-grid-tile [colspan]="1" [rowspan]="1">4</mat-grid-tile>
+          <mat-grid-tile [colspan]="1" [rowspan]="1">5</mat-grid-tile>
+        </mat-grid-list>
+      </div>
+      <div class="col-md-6 col-md-offset-2 overflow-auto grid-height">
+        <mat-grid-list cols="1" rowHeight="225px">
+          <mat-grid-tile [colspan]="1" [rowspan]="1">1</mat-grid-tile>
+        </mat-grid-list>
+        <br>
+        <h2>Courses Attending Event:</h2>
+        <p>Course 1</p>
+        <p>Course 2</p>
+        <p>Course 3</p>
+
+        <hr>
+
+        <button class="btn btn-secondary">Select file...</button>
+        <br><br>
+        <button class="btn btn-primary">Upload as New Submission</button>
+
+        <hr>
+
+        <button class="btn btn-primary btn-remove"
+          onclick="confirm('Are you sure you wish to remove this event?')">Remove Event</button>
+      </div>
     </div>
   </div>
-</div>
+</body>
