@@ -1,4 +1,14 @@
 <body>
+  <div id="camera" class="collapse camera">
+    <div>
+      <br><br>
+      <webcam></webcam>
+      <br><br>
+      <button class="btn btn-primary">Take Photo</button>
+      <br><br>
+      <button class="btn btn-danger" data-toggle="collapse" data-target="#camera">Cancel</button>
+    </div>
+  </div>
   <div class="center">
     <br><br>
     <div class="row">
@@ -27,7 +37,9 @@
 
         <hr>
 
-        <button class="btn btn-secondary">Select file...</button>
+        <button class="btn btn-secondary" data-toggle="collapse" data-target="#camera">
+          Select file...
+        </button>
         <br><br>
         <button class="btn btn-primary">Upload as New Submission</button>
 

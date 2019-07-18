@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatGridListModule } from '@angular/material';
 import { MatCardModule } from '@angular/material/card';
+import { WebcamModule } from 'ngx-webcam';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,14 +24,15 @@ import { RequestsComponent } from './requests/requests.component';
     SignupComponent,
     CoursesComponent,
     EventsComponent,
-    RequestsComponent
+    RequestsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    WebcamModule
   ],
   providers: [],
   bootstrap: [AppComponent]
