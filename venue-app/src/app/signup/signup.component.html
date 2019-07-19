@@ -58,7 +58,7 @@
 
       <div class="form-group">
         <button (click)="addUser(firstName.value, lastName.value, email.value, password.value)" type="submit"
-          class="btn btn-primary" [disabled]="angForm.pristine || angForm.invalid">
+          class="btn btn-primary" [disabled]="angForm.pristine || angForm.invalid" routerLink="/">
           Create Account
         </button>
       </div>
