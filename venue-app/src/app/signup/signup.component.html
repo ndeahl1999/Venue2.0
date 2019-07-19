@@ -1,21 +1,70 @@
-<body>
-  <div class="center">
-    <h2 style="text-align:center">Create an account</h2>
-    <div class="ex1">
-      <hr>
-      <input class="form-control field" type='text' name='firstname' placeholder="First name..." required>
-      <br>
-      <input class="form-control field" type='text' name='lastname' placeholder="Last name..." required>
-      <br>
-      <input class="form-control field" type='text' name='email' placeholder="example@gmail.com" required>
-      <br>
-      <input class="form-control field" type='password' name='password' placeholder="Password..." required>
-      <br>
-      <input class="form-control field" type='password' name='passwordConfirm' placeholder="Re-enter Password..."
-        required>
-      <br>
-      <button class="btn btn-primary">Submit</button>
-      <br>
-    </div>
+<body style="text-align: center">
+  <br><br>
+  <img style="width: 15%" alt="Angular Logo" src="assets/img/venuelogo.svg">
+  <br><br>
+  <h2 style="text-align:center">Create an account.</h2>
+  <div class="ex1">
+    <hr>
+    <!-- <div class="card">
+      <div class="card-body"> -->
+    <form [formGroup]="angForm" novalidate>
+      <div class="form-group">
+        <label class="col-md-4">First Name</label>
+        <input type="text" class="form-control" formControlName="firstName" #firstName />
+      </div>
+      <div
+        *ngIf="angForm.controls['firstName'].invalid && (angForm.controls['firstName'].dirty || angForm.controls['firstName'].touched)"
+        class="alert alert-danger">
+        <div *ngIf="angForm.controls['firstName'].errors.required">
+          First Name is required.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4">Last Name</label>
+        <input type="text" class="form-control" formControlName="lastName" #lastName />
+      </div>
+      <div
+        *ngIf="angForm.controls['lastName'].invalid && (angForm.controls['lastName'].dirty || angForm.controls['lastName'].touched)"
+        class="alert alert-danger">
+        <div *ngIf="angForm.controls['lastName'].errors.required">
+          Last Name is required.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4">Email</label>
+        <input type="text" class="form-control" formControlName="email" #email />
+      </div>
+      <div
+        *ngIf="angForm.controls['email'].invalid && (angForm.controls['email'].dirty || angForm.controls['email'].touched)"
+        class="alert alert-danger">
+        <div *ngIf="angForm.controls['email'].errors.required">
+          Email is required.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-4">Password</label>
+        <input type="text" class="form-control" formControlName="password" #password />
+      </div>
+      <div
+        *ngIf="angForm.controls['password'].invalid && (angForm.controls['password'].dirty || angForm.controls['password'].touched)"
+        class="alert alert-danger">
+        <div *ngIf="angForm.controls['password'].errors.required">
+          Password is required.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <button (click)="addUser(firstName.value, lastName.value, email.value, password.value)" type="submit"
+          class="btn btn-primary" [disabled]="angForm.pristine || angForm.invalid" routerLink="/">
+          Create Account
+        </button>
+      </div>
+
+    </form>
+    <!-- </div>
+    </div> -->
   </div>
 </body>
