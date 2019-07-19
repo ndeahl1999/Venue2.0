@@ -9,10 +9,12 @@ function requiredProcessEnv(name) {
   }
   return process.env[name];
 }
+
 requiredProcessEnv("NODE_ENV")
 // All configurations will extend these options
 // ============================================
 var all = {
+
   env: process.env.NODE_ENV,
 
   // Root path of server
