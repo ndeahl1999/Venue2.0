@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatGridListModule } from '@angular/material';
 import { MatCardModule } from '@angular/material/card';
+import { WebcamModule } from 'ngx-webcam';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,7 +28,7 @@ import {ReactiveFormsModule} from '@angular/forms';
     SignupComponent,
     CoursesComponent,
     EventsComponent,
-    RequestsComponent
+    RequestsComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +36,7 @@ import {ReactiveFormsModule} from '@angular/forms';
     MatToolbarModule,
     MatGridListModule,
     MatCardModule,
+    WebcamModule,
     HttpClientModule,
     ReactiveFormsModule
   ],
