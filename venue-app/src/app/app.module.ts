@@ -14,6 +14,10 @@ import { CoursesComponent } from './courses/courses.component';
 import { EventsComponent } from './events/events.component';
 import { RequestsComponent } from './requests/requests.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { UsersService } from './users.service';
+import {ReactiveFormsModule} from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,9 +34,11 @@ import { RequestsComponent } from './requests/requests.component';
     AppRoutingModule,
     MatToolbarModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [UsersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
