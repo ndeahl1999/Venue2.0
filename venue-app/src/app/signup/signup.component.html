@@ -1,36 +1,40 @@
 <body style="text-align: center">
-  <br><br>
-  <img style="width: 15%" alt="Angular Logo" src="assets/img/venuelogo.svg">
-  <br><br>
+  <img alt="Angular Logo" src="assets/img/venuelogo.svg">
   <h2 style="text-align:center">Create an account.</h2>
   <div class="ex1">
     <hr>
     <!-- <div class="card">
       <div class="card-body"> -->
     <form [formGroup]="angForm" novalidate>
-      <div class="form-group">
-        <label class="col-md-4">First Name</label>
-        <input type="text" class="form-control" formControlName="firstName" #firstName />
-      </div>
-      <div
-        *ngIf="angForm.controls['firstName'].invalid && (angForm.controls['firstName'].dirty || angForm.controls['firstName'].touched)"
-        class="alert alert-danger">
-        <div *ngIf="angForm.controls['firstName'].errors.required">
-          First Name is required.
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label class="col-md-12">First Name</label>
+            <input type="text" class="form-control" formControlName="firstName" #firstName />
+          </div>
+          <div
+            *ngIf="angForm.controls['firstName'].invalid && (angForm.controls['firstName'].dirty || angForm.controls['firstName'].touched)"
+            class="alert alert-danger">
+            <div *ngIf="angForm.controls['firstName'].errors.required">
+              First Name is required.
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label class="col-md-12">Last Name</label>
+            <input type="text" class="form-control" formControlName="lastName" #lastName />
+          </div>
+          <div
+            *ngIf="angForm.controls['lastName'].invalid && (angForm.controls['lastName'].dirty || angForm.controls['lastName'].touched)"
+            class="alert alert-danger">
+            <div *ngIf="angForm.controls['lastName'].errors.required">
+              Last Name is required.
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="form-group">
-        <label class="col-md-4">Last Name</label>
-        <input type="text" class="form-control" formControlName="lastName" #lastName />
-      </div>
-      <div
-        *ngIf="angForm.controls['lastName'].invalid && (angForm.controls['lastName'].dirty || angForm.controls['lastName'].touched)"
-        class="alert alert-danger">
-        <div *ngIf="angForm.controls['lastName'].errors.required">
-          Last Name is required.
-        </div>
-      </div>
+      
 
       <div class="form-group">
         <label class="col-md-4">Email</label>
