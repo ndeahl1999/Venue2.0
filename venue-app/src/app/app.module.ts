@@ -17,7 +17,7 @@ import { RequestsComponent } from './requests/requests.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { UsersService } from './users.service';
-import {ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
