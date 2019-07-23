@@ -6,6 +6,12 @@
   top: 0px;
   background: rgb(124, 71, 146);
 
+  * {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.1s;
+  }
+
   .badge {
     font-size: 0.6em;
     line-height: 1em;
@@ -19,19 +25,27 @@
   }
 
   .nav-link {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+    
+    margin: 5px 5px 0px 5px;
   }
+
 
   //Hover effects
-  .navbar-brand:hover {
-    color: rgb(255, 255, 255);
+  .navbar-brand:hover .badge {
+    background: rgb(120, 168, 170);
   }
 
-  .nav-link:hover {
+  .nav-item:hover {
     color: rgb(255, 255, 255);
     transition: 0.1s;
     margin-bottom: -2px;
     border-bottom: 2px solid rgb(255, 255, 255);
+  }
+
+  .logout:hover {
+    transition: 0.1s;
+    color: rgb(247, 165, 165);
+    font-weight: 600;
+    margin-right: 4px;
   }
 }
