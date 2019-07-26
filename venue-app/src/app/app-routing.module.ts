@@ -7,6 +7,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CoursesComponent } from './courses/courses.component';
 import { EventsComponent } from './events/events.component';
 import { RequestsComponent } from './requests/requests.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 //import routable components
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'courses', component: CoursesComponent },
   { path: 'events', component: EventsComponent },
-  { path: 'requests', component: RequestsComponent }
+  { path: 'requests', component: RequestsComponent },
+  { path: 'profile', component: ProfileComponent }
 ];
 
 @NgModule({

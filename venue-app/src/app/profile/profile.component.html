@@ -1,0 +1,59 @@
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <div class="row">
+          <div class="col-md">
+            <div class="img-update">
+              <img alt="Angular Logo" src="assets/img/profile_example.png">
+              <input type="file" />
+            </div>
+          </div>
+          <div class="col-md">
+            <h1>Edit Profile.</h1>
+
+            <div class="form-group">
+              <label>First Name</label>
+              <div class="input-group">
+                <input type="text" class="form-control" formControlName="firstName" #firstName placeholder="YOURNAME" />
+                <span class="input-group-btn">
+                  <button class="btn btn-primary">Update</button>
+                </span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Last Name</label>
+              <div class="input-group">
+                <input type="text" class="form-control" formControlName="lastName" #lastName placeholder="YOURNAME" />
+                <span class="input-group-btn">
+                  <button class="btn btn-primary">Update</button>
+                </span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Change password</label>
+              <div class="input-group">
+                <input type="text" class="form-control" formControlName="password" #password
+                  placeholder="NEWPASSWORD" />
+                <input type="text" class="form-control" formControlName="passwordConfirm" #passwordConfirm
+                  placeholder="NEWPASSWORD" />
+                <span class="input-group-btn">
+                  <button class="btn btn-primary">Update</button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        hi
+      </div>
+    </div>
+  </div>
+
+</body>

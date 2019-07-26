@@ -18,6 +18,7 @@ import { RequestsComponent } from './requests/requests.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UsersService } from './users.service';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     CoursesComponent,
     EventsComponent,
     RequestsComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
