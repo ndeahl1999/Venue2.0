@@ -3,8 +3,7 @@
   <h2>Create an account.</h2>
   <div class="ex1">
     <hr>
-    <!-- <div class="card">
-      <div class="card-body"> -->
+
     <form [formGroup]="registerForm" (ngSubmit) = "onFormSubmit()">
       <div class="form-group">
         <label for = "firstName">First Name</label>
@@ -21,7 +20,6 @@
             <div *ngIf = "fval.lastName.errors.required">Enter a Last Name</div>
           </div>
       </div>
-
 
       <div class="form-group">
         <label for="email">Email</label>
