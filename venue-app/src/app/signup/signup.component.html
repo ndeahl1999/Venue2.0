@@ -7,64 +7,48 @@
     <hr>
     <!-- <div class="card">
       <div class="card-body"> -->
-    <form [formGroup]="angForm" novalidate>
+    <form [formGroup]="registerForm" (ngSubmit) = "onFormSubmit()">
       <div class="form-group">
-        <label class="col-md-4">First Name</label>
-        <input type="text" class="form-control" formControlName="firstName" #firstName />
+        <label for = "firstName">First Name</label>
+          <input type="text" class="form-control" formControlName="firstName" [ngClass] = "{'is-invalid': submitted && fval.firstName.errors}" placeholder="First Name"/>
+          <div *ngIf = "submitted && fval.firstName.errors" class = "invalid-feedback">
+            <div *ngIf = "fval.firstName.errors.required">Enter a First Name</div>
+          </div>
       </div>
-      <div
-        *ngIf="angForm.controls['firstName'].invalid && (angForm.controls['firstName'].dirty || angForm.controls['firstName'].touched)"
-        class="alert alert-danger">
-        <div *ngIf="angForm.controls['firstName'].errors.required">
-          First Name is required.
+
+      <div class="form-group">
+        <label for = "lastName">Last Name</label>
+          <input type="text" class="form-control" formControlName="lastName" [ngClass] = "{'is-invalid': submitted && fval.lastName.errors}" placeholder="Last Name"/>
+          <div *ngIf = "submitted && fval.lastName.errors" class = "invalid-feedback">
+            <div *ngIf = "fval.lastName.errors.required">Enter a Last Name</div>
+          </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && fval.email.errors }" placeholder="Email Address"/>
+        <div *ngIf="submitted && fval.email.errors" class="invalid-feedback">
+          <div *ngIf="fval.email.errors.required">Email is required</div>
+          <div *ngIf="fval.email.errors.email">Enter valid email address</div>
         </div>
       </div>
 
       <div class="form-group">
-        <label class="col-md-4">Last Name</label>
-        <input type="text" class="form-control" formControlName="lastName" #lastName />
-      </div>
-      <div
-        *ngIf="angForm.controls['lastName'].invalid && (angForm.controls['lastName'].dirty || angForm.controls['lastName'].touched)"
-        class="alert alert-danger">
-        <div *ngIf="angForm.controls['lastName'].errors.required">
-          Last Name is required.
+        <label for="email">Password</label>
+        <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && fval.password.errors }" placeholder="Password"/>
+        <div *ngIf="submitted && fval.password.errors" class="invalid-feedback">
+            <div *ngIf="fval.password.errors.required">Password is required</div>
+            <div *ngIf="fval.password.errors.minlength">Password must be at least 6 characters</div>
         </div>
       </div>
 
       <div class="form-group">
-        <label class="col-md-4">Email</label>
-        <input type="text" class="form-control" formControlName="email" #email />
-      </div>
-      <div
-        *ngIf="angForm.controls['email'].invalid && (angForm.controls['email'].dirty || angForm.controls['email'].touched)"
-        class="alert alert-danger">
-        <div *ngIf="angForm.controls['email'].errors.required">
-          Email is required.
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label class="col-md-4">Password</label>
-        <input type="text" class="form-control" formControlName="password" #password />
-      </div>
-      <div
-        *ngIf="angForm.controls['password'].invalid && (angForm.controls['password'].dirty || angForm.controls['password'].touched)"
-        class="alert alert-danger">
-        <div *ngIf="angForm.controls['password'].errors.required">
-          Password is required.
-        </div>
-      </div>
-
-      <div class="form-group">
-        <button (click)="addUser(firstName.value, lastName.value, email.value, password.value)" type="submit"
-          class="btn btn-primary" [disabled]="angForm.pristine || angForm.invalid">
-          Create Account
+        <button [disabled]="loading" class="btn btn-primary">
+            <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+            Create Account
         </button>
       </div>
 
     </form>
-    <!-- </div>
-    </div> -->
   </div>
 </body>
