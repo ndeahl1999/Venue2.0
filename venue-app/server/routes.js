@@ -3,7 +3,7 @@
  */
 'use strict';
 
-/*import errors from './components/errors';
+import errors from './components/errors';
 import path from 'path';
 
 // Import API Endpoints
@@ -39,4 +39,4 @@ export default function(app) {
       res.sendFile(path.resolve(app.get('appPath') + '/index.html'));
     });
 
-}*/
+}

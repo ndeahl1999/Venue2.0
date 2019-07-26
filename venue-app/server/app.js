@@ -14,7 +14,7 @@ import * as productionSeed from './config/productionseed';
 import socketioModule from 'socket.io';
 import socketioConfig from './config/socketio';
 import expressConfig from './config/express';
-import routes from './routes';
+//import routes from './routes';
 import schedule from './schedule';
 
 // Setup server
