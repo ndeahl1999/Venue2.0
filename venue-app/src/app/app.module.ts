@@ -20,6 +20,8 @@ import { UsersService } from './users.service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
 
+import {ToastrModule} from 'ngx-toastr';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +42,8 @@ import { ProfileComponent } from './profile/profile.component';
     MatCardModule,
     WebcamModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ToastrModule.forRoot()
   ],
   providers: [UsersService],
   bootstrap: [AppComponent]
