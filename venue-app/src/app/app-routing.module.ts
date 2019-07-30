@@ -8,7 +8,7 @@ import { CoursesComponent } from './courses/courses.component';
 import { EventsComponent } from './events/events.component';
 import { RequestsComponent } from './requests/requests.component';
 import { ProfileComponent } from './profile/profile.component';
-
+import { GradesComponent } from './grades/grades.component';
 
 //import routable components
 
@@ -21,7 +21,8 @@ const routes: Routes = [
   { path: 'courses', component: CoursesComponent },
   { path: 'events', component: EventsComponent },
   { path: 'requests', component: RequestsComponent },
-  { path: 'profile', component: ProfileComponent }
+  { path: 'profile', component: ProfileComponent },
+  { path: 'grades', component: GradesComponent }
 ];
 
 @NgModule({

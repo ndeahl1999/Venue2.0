@@ -14,13 +14,14 @@ import { SignupComponent } from './signup/signup.component';
 import { CoursesComponent } from './courses/courses.component';
 import { EventsComponent } from './events/events.component';
 import { RequestsComponent } from './requests/requests.component';
+import { ProfileComponent } from './profile/profile.component';
+import { GradesComponent } from './grades/grades.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { UsersService } from './users.service';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ProfileComponent } from './profile/profile.component';
 
-import {ToastrModule} from 'ngx-toastr';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import {ToastrModule} from 'ngx-toastr';
     EventsComponent,
     RequestsComponent,
     ProfileComponent,
+    GradesComponent,
   ],
   imports: [
     BrowserModule,
