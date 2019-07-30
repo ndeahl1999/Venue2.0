@@ -7,6 +7,8 @@ const express = require('express'),
     mongoose =  require('mongoose');
 
 mongoose.Promise = require('bluebird');
-const config = require("server/config");
+const config = require("./server/config/environment");
 
 var app = express();
+var fs = require("fs");
+
