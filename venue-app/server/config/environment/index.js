@@ -19,7 +19,8 @@ var all = {
           db: {
             safe: true
           }
-        }
+        },
+        uri :'mongodb://127.0.0.1/venue'
     },
 
     cas: {
