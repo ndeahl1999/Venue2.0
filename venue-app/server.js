@@ -4,12 +4,19 @@ const express = require('express'),
     path = require('path'),
     bodyParser = require('body-parser'),
     cors = require('cors'),
-    mongoose =  require('mongoose');
+    mongoose =  require('mongoose'),
+    session = require('express-session');
 
 mongoose.Promise = require('bluebird');
 const config = require("./server/config/environment");
 
 const app = express();
+app.use( session({
+    secret            : config.secrets.session,
+    resave            : false,
+    saveUninitialized : true
+}));
+ 
 var fs = require("fs");
 
 // create a write stream (in append mode)
