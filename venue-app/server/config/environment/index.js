@@ -22,15 +22,19 @@ var all = {
           db: {
             safe: true
           }
-        },
-        uri :'mongodb://127.0.0.1/venue'
+        }
     },
 
     cas: {
-        serverURL: process.env.CAS_SERVER_URL,
-        version:   process.env.CAS_VERSION
-    }
+        serverURL: process.env.CAS_SERVER_URL || "http://cas-auth.rpi.edu/cas",
+        version:   process.env.CAS_VERSION || "3.0"
+    },
+
+    userRoles: ['guest', 'user', 'admin']
 
 };
 
-module.exports = all; 
+module.exports = _.merge(
+  all,
+  require('./' + process.env.NODE_ENV + '.js')
+); 
