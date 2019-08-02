@@ -1,7 +1,7 @@
 <body>
-  <div class="center">
+  <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-md-6 col-sm-8 col-lg-6">
+      <div class="col">
         <h2>My Courses
           <span class="float-right">
             <button type="button" class="btn btn-primary add-button">
@@ -14,82 +14,79 @@
             </button>
           </span>
         </h2>
+        <div class="col col-md-offset-2 overflow-auto">
+          <mat-grid-list cols="2" rowHeight="300px" gutterSize="10px">
+            <mat-grid-tile type="button" [colspan]="1" [rowspan]="1">
+              <mat-card>
+                <img mat-card-img width="200" src="assets/img/venuelogo.svg">
+                <mat-card-content>
+                  <h1>
+                    ClassName
+                  </h1>
+                  <h1>
+                    Instructor
+                  </h1>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile type="button" [colspan]="1" [rowspan]="1">
+              <mat-card>
+                <img mat-card-img width="200" src="assets/img/venuelogo.svg">
+                <mat-card-content>
+                  <h1>
+                    ClassName
+                  </h1>
+                  <h1>
+                    Instructor
+                  </h1>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile type="button" [colspan]="1" [rowspan]="1">
+              <mat-card>
+                <img mat-card-img width="200" src="assets/img/venuelogo.svg">
+                <mat-card-content>
+                  <h1>
+                    ClassName
+                  </h1>
+                  <h1>
+                    Instructor
+                  </h1>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile type="button" [colspan]="1" [rowspan]="1">
+              <mat-card>
+                <img mat-card-img width="200" src="assets/img/venuelogo.svg">
+                <mat-card-content>
+                  <h1>
+                    ClassName
+                  </h1>
+                  <h1>
+                    Instructor
+                  </h1>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile type="button" [colspan]="1" [rowspan]="1">
+              <mat-card>
+                <img mat-card-img width="200" src="assets/img/venuelogo.svg">
+                <mat-card-content>
+                  <h1>
+                    ClassName
+                  </h1>
+                  <h1>
+                    Instructor
+                  </h1>
+                </mat-card-content>
+              </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </div>
       </div>
-      <h2 class="col-md-6">Selected Course</h2>
-    </div>
-    <div class="row">
-      <div class="col-md-6 col-md-offset-2 overflow-auto grid-height">
-        <mat-grid-list cols="2" rowHeight="300px" gutterSize="10px">
-          <mat-grid-tile type="button" [colspan]="1" [rowspan]="1">
-            <mat-card>
-              <img mat-card-img width="200" src="assets/img/venuelogo.svg" alt="Photo of a Shiba Inu">
-              <mat-card-content>
-                <h1>
-                  ClassName
-                </h1>
-                <h1>
-                  Instructor
-                </h1>
-              </mat-card-content>
-            </mat-card>
-          </mat-grid-tile>
-          <mat-grid-tile type="button" [colspan]="1" [rowspan]="1">
-            <mat-card>
-              <img mat-card-img width="200" src="assets/img/venuelogo.svg" alt="Photo of a Shiba Inu">
-              <mat-card-content>
-                <h1>
-                  ClassName
-                </h1>
-                <h1>
-                  Instructor
-                </h1>
-              </mat-card-content>
-            </mat-card>
-          </mat-grid-tile>
-          <mat-grid-tile type="button" [colspan]="1" [rowspan]="1">
-            <mat-card>
-              <img mat-card-img width="200" src="assets/img/venuelogo.svg" alt="Photo of a Shiba Inu">
-              <mat-card-content>
-                <h1>
-                  ClassName
-                </h1>
-                <h1>
-                  Instructor
-                </h1>
-              </mat-card-content>
-            </mat-card>
-          </mat-grid-tile>
-          <mat-grid-tile type="button" [colspan]="1" [rowspan]="1">
-            <mat-card>
-              <img mat-card-img width="200" src="assets/img/venuelogo.svg" alt="Photo of a Shiba Inu">
-              <mat-card-content>
-                <h1>
-                  ClassName
-                </h1>
-                <h1>
-                  Instructor
-                </h1>
-              </mat-card-content>
-            </mat-card>
-          </mat-grid-tile>
-          <mat-grid-tile type="button" [colspan]="1" [rowspan]="1">
-            <mat-card>
-              <img mat-card-img width="200" src="assets/img/venuelogo.svg" alt="Photo of a Shiba Inu">
-              <mat-card-content>
-                <h1>
-                  ClassName
-                </h1>
-                <h1>
-                  Instructor
-                </h1>
-              </mat-card-content>
-            </mat-card>
-          </mat-grid-tile>
-        </mat-grid-list>
-      </div>
-
-      <div class="col-md-6 col-md-offset-2 overflow-auto">
-        <mat-grid-list cols="2" rowHeight="89px" gutterSize="10px">
+      <div class="col">
+        <h2>Selected Course</h2>
+        <mat-grid-list cols="2" rowHeight="85px" gutterSize="10px">
 
           <mat-grid-tile [colspan]="2" [rowspan]="6">
             <mat-card>
