@@ -1,5 +1,7 @@
 /*main server.js*/
 
+process.env.NODE_ENV = process.argv[2] || "development";
+
 const express = require('express'),
     path = require('path'),
     bodyParser = require('body-parser'),
