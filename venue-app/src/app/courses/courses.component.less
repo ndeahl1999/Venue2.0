@@ -2,24 +2,47 @@ h1 {
   color: white;
 }
 
-
 .add-button {
   height: 100%;
+  width: 100%;
   border-style: none;
-  margin: 5px;
+}
+
+button {
+  width: 100%;
+  margin: 2px;
 }
 
 img {
-  max-width: 20%;
-  max-height: 60%;
+  max-width: 80%;
+  max-height: 50%;
 }
 
-.col {
-  max-height: 80%;
+.scroll-container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  mat-card {
+    display: inline-block;
+    margin: 5px;
+  }
 }
+
+mat-card {
+  display: inline-block;
+  margin: 5px;
+  padding: 0;
+}
+
+// mat-card-content {
+//   background: rgba(0, 0, 0, 0.2)
+// }
 
 body {
-  height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 5%;
   background: white;
   overflow-y: hidden;
 }
