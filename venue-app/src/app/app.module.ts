@@ -22,6 +22,7 @@ import { UsersService } from './users.service';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { ToastrModule } from 'ngx-toastr';
+import { CourselistComponent } from './courselist/courselist.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ToastrModule } from 'ngx-toastr';
     RequestsComponent,
     ProfileComponent,
     GradesComponent,
+    CourselistComponent,
   ],
   imports: [
     BrowserModule,
