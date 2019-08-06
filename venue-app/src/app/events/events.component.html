@@ -1,76 +1,36 @@
 <body>
-  <div class="center">
-    <div class="row">
-      <div class="col-xs-12 col-md-6 col-sm-8 col-lg-6">
-        <h2>Upcoming Events
-          <span class="float-right">
-            <button type="button" class="btn btn-primary add-button" data-toggle="modal" data-target="#eventModal">
-              Create Event
-            </button>
-            <!-- Modal -->
-            <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="gridcell">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">New Event</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="form-group">
-                      <label for="courseOptions">Course:</label>
-                      <select class="form-control" id="courseOptions">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                      </select>
-                    </div>
-                    <input type="text" placeholder="Title">
-                  </div>
-                  <div class="modal-footer">
-                    <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button class="btn btn-primary" id="capture" data-dismiss="modal">Choose Location...</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </span>
-        </h2>
-      </div>
-      <h2 class="col-md-6">Selected Event</h2>
-    </div>
-    <div class="row">
-      <div class="col-md-6 col-md-offset-2 overflow-auto grid-height">
-        <mat-grid-list cols="1" rowHeight="225px" gutterSize="10px">
-          <mat-grid-tile [colspan]="1" [rowspan]="1">1</mat-grid-tile>
-          <mat-grid-tile [colspan]="1" [rowspan]="1">2</mat-grid-tile>
-          <mat-grid-tile [colspan]="1" [rowspan]="1">3</mat-grid-tile>
-          <mat-grid-tile [colspan]="1" [rowspan]="1">4</mat-grid-tile>
-          <mat-grid-tile [colspan]="1" [rowspan]="1">5</mat-grid-tile>
-        </mat-grid-list>
-      </div>
-      <div class="col-md-6 col-md-offset-2 overflow-auto grid-height">
-        <mat-grid-list cols="1" rowHeight="225px" gutterSize="10px">
-          <mat-grid-tile [colspan]="1" [rowspan]="1">1</mat-grid-tile>
-        </mat-grid-list>
-        <h2>Courses Attending Event:</h2>
-        <p>Course 1</p>
-        <p>Course 2</p>
-        <p>Course 3</p>
+  <div class="container">
+    <app-eventlist></app-eventlist>
 
-        <hr>
+    <hr>
 
-        <div class="btn-group" role="group">
-          <button class="btn btn-primary" data-toggle="modal" data-target="#cameraModal">
-            Take photo
-          </button>
-          <input type="button" class="btn btn-secondary" type="file" />
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <div class="col">
+            <h4>Selected Event</h4>
+          </div>
+          <div class="col-4">
+            <button class="btn btn-primary btn-remove"
+              onclick="confirm('Are you sure you wish to remove this event?')">Remove Event</button>
+          </div>
+
         </div>
-        <button class="btn btn-primary">Upload as New Submission</button>
-        <!-- Modal -->
+        <div class="row container">
+          <img src="/assets/img/venuelogo.svg" style="max-height: 300px;">
+        </div>
+      </div>
+      <div class="col">
+
+        <div class="row">
+          <button class="btn btn-primary" data-toggle="modal" data-target="#cameraModal">Take photo</button>
+          <input type="button" class="btn btn-secondary" type="file" style="max-width: 300px;" />
+        </div>
+
+        <div class="row">
+          <button class="btn btn-primary">Upload</button>
+        </div>
+
         <div class="modal fade" id="cameraModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
           aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-lg" role="gridcell">
@@ -81,9 +41,7 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <!-- <div class="modal-body"> -->
               <webcam mirrorImage="always" autoplay></webcam>
-              <!-- </div> -->
               <div class="modal-footer">
                 <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                 <button class="btn btn-primary" id="capture" data-dismiss="modal">Take Photo</button>
@@ -91,10 +49,6 @@
             </div>
           </div>
         </div>
-
-        <hr>
-        <button class="btn btn-primary btn-remove"
-          onclick="confirm('Are you sure you wish to remove this event?')">Remove Event</button>
       </div>
     </div>
   </div>

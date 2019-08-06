@@ -23,6 +23,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { ToastrModule } from 'ngx-toastr';
 import { CourselistComponent } from './courselist/courselist.component';
+import { EventlistComponent } from './eventlist/eventlist.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { CourselistComponent } from './courselist/courselist.component';
     ProfileComponent,
     GradesComponent,
     CourselistComponent,
+    EventlistComponent,
   ],
   imports: [
     BrowserModule,
