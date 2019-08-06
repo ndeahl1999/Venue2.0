@@ -1,27 +1,25 @@
-# VenueApp
+<p align="center">
+    <img src="https://i.imgur.com/PjQOvn2.png" width=250px/>
+</p>
+
+## Venue is a platform that allows instructors to give students credit for attending events. An instructor signs on and creates courses and events, students can then use the venue app to upload event submissions, which can contain images or GPS data that verifies a student attended an event.
+
+[![Build Status](https://travis-ci.org/ndeahl1999/Venue2.0.svg)](https://travis-ci.org/ndeahl1999/Venue2.0)
+[![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg?maxAge=2592000)]()
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/ndeahl1999/Venue2.0/dev/LICENSE.md)
+
+[![GitHub issues](https://img.shields.io/github/issues/ndeahl1999/Venue2.0.svg?maxAge=2592000)](https://github.com/ndeahl1999/Venue2.0/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/ndeahl1999/Venue2.0.svg)](https://github.com/ndeahl1999/Venue2.0/pulls)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Clone the repository and run `npm install` to install dependencies
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng serve` to run the development server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
