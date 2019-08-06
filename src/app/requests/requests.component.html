@@ -1,62 +1,40 @@
 <body>
-  <div class="center">
-    <div class="row">
-        <div class="col-xs-12 col-md-6 col-sm-8 col-lg-6">
-          <h2>Validation Requests
-          </h2>
-        </div>
-        <div class="col-md-6 col-md-offset-2">
-          <h2>
-              Submission Info
-          </h2>
-        </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 col-md-offset-2 overflow-auto grid-height">
-        <mat-grid-list cols="1" rowHeight="100px" gutterSize="10px">
-          <mat-grid-tile [colspan]="1" [rowspan]="1">1</mat-grid-tile>
-          <mat-grid-tile [colspan]="1" [rowspan]="1">2</mat-grid-tile>
-          <mat-grid-tile [colspan]="1" [rowspan]="1">3</mat-grid-tile>
-          <mat-grid-tile [colspan]="1" [rowspan]="1">4</mat-grid-tile>
-          <mat-grid-tile [colspan]="1" [rowspan]="1">5</mat-grid-tile>
-          <mat-grid-tile [colspan]="1" [rowspan]="1">6</mat-grid-tile>
-          <mat-grid-tile [colspan]="1" [rowspan]="1">7</mat-grid-tile>
-          <mat-grid-tile [colspan]="1" [rowspan]="1">8</mat-grid-tile>
-        </mat-grid-list>
-      </div>
-      <div class="col-md-6 col-md-offset-2 overflow-auto grid-height">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-2">
-            <img class="center" src="/assets/img/stud.jpg">
-          </div>
-          <h2>
-            Event name
-            <hr width="100%">Event location
-          </h2>
-        </div>
-        <br><br>
-        <h2 class="center">Student name</h2>
+  <div class="container">
+    <app-requestlist></app-requestlist>
 
-        <br>
-        <p class="center overflow-auto comment">
-          Comment here and it can extend up to this point and can be read even more!
-          Comment here and it can extend up to this point and can be read even more!
-          Comment here and it can extend up to this point and can be read even more!
-          Comment here and it can extend up to this point and can be read even more!
-          Comment here and it can extend up to this point and can be read even more!
-        </p>
-        <hr>
+    <!-- <hr>
+
+    <div class="row">
+      <div class="col">
         <div class="row">
-          <div class="col-md-6 col-md-offset-2 overflow-auto">
-            <button class="btn btn-primary button2"
+          <div class="col">
+            <h4>Event Name / Location</h4>
+          </div>
+        </div>
+        <div class="row container">
+          <img src="/assets/img/stud.jpg" style="max-height: 250px; min-width: 300px;">
+        </div>
+      </div>
+      <div class="col">
+
+        <div class="row">
+          <h4>Student Name</h4>
+        </div>
+
+        <div class="row">
+          <p>Comment Comment Comment Comment</p>
+        </div>
+
+        <div class="row">
+          <div class="btn-group" role="group">
+            <button class="btn btn-primary button1"
+              onclick="confirm('Are you sure you wish to accept this submission?')">Accept</button>
+            <button class=" btn btn-primary button2"
               onclick="confirm('Are you sure you wish to reject this submission?')">Reject</button>
           </div>
-          <div class="col-md-6 col-md-offset-2 overflow-auto">
-              <button class="btn btn-primary button1"
-                onclick="confirm('Are you sure you wish to accept this submission?')">Accept</button>
-            </div>
         </div>
+
       </div>
-    </div>
+    </div> -->
   </div>
 </body>
