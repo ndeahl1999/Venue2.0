@@ -4,7 +4,9 @@ const path = require('path');
 
 var authRouter = require("./auth");
 
-
-export default function(app){
+function route(app){
+    app.use('/auth', authRouter);
 
 }
+
+module.exports = route; 

@@ -7,7 +7,8 @@ const express = require('express'),
     bodyParser = require('body-parser'),
     cors = require('cors'),
     mongoose =  require('mongoose'),
-    session = require('express-session');
+    session = require('express-session')
+    routes = require('./server/routes');
 
 mongoose.Promise = require('bluebird');
 const config = require("./server/config/environment");
@@ -36,3 +37,5 @@ app.use(cors());
 const server = app.listen(config.port, function(){
     console.log('Server up on port ' + config.port );
 });
+
+exports = module.exports = app; 
