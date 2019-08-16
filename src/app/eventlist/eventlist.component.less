@@ -7,6 +7,7 @@
     display: inline-block;
     margin-left: 5px;
     margin-right: 5px;
+    max-width: 400px;
 
     .card-header {
       padding: 0px;
@@ -14,12 +15,29 @@
   }
 }
 
-h1 {
-  color: white;
-}
-
 .add-button {
   height: 100%;
   width: 100%;
   border-style: none;
+}
+
+
+.card-scroll {
+  padding: 10px;
+  overflow-x: scroll;
+}
+
+.card {
+  overflow: hidden;
+  width: 250px;
+  min-width: 250px;
+  max-width: 250px;
+  margin-right: 10px;
+}
+
+.card-img-top {
+  margin: 0 auto;
+}
+.card-body h1 {
+  font-size: 1.5em;
 }
