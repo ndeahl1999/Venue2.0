@@ -7,36 +7,29 @@
     <div class="row">
       <div class="col">
         <div class="row">
-          <h2>Selected Course</h2>
-        </div>
-        <div class="row">
-          <div class="col"></div>
-          <div class="col">
-            <mat-card>
-              <img mat-card-img width="400" src="assets/img/venuelogo.svg">
-              <mat-card-content>
+            <div class="card">
+              <img class="card-img-top" src="assets/img/venuelogo.svg">
+              <div class="card-body">
                 <h1>
                   ClassName
                 </h1>
                 <h1>
                   Instructor
                 </h1>
-              </mat-card-content>
-            </mat-card>
-          </div>
-          <div class="col"></div>
+              </div>
+            </div>
         </div>
-        <div class="row">
-          <div class="col"></div>
-          <div class="col">
-            <button class="btn btn-primary">Show students</button>
-          </div>
-          <div class="col">
-            <button class="btn btn-secondary"
-              onclick="confirm('This action will remove you from the course. OK?')">Unenroll</button>
-          </div>
-          <div class="col"></div>
+      </div>
+      <div class="col controlRow">
+        <h2>Selected Course: <b>ClassName</b></h2>
+        <div class="col">
+          <button class="btn btn-primary">Show students</button>
         </div>
+        <div class="col">
+          <button class="btn btn-secondary"
+            onclick="confirm('This action will remove you from the course. OK?')">Unenroll</button>
+        </div>
+        <div class="col"></div>
       </div>
     </div>
   </div>
