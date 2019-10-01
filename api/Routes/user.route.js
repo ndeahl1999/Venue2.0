@@ -22,4 +22,4 @@ userRoutes.route('/add').post(function (req, res) {
 
 
 
-module.exports = userRoutes
+module.exports = userRoutes;

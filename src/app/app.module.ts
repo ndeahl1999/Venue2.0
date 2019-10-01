@@ -25,6 +25,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { CourselistComponent } from './courselist/courselist.component';
 import { EventlistComponent } from './eventlist/eventlist.component';
 import { RequestlistComponent } from './requestlist/requestlist.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { RequestlistComponent } from './requestlist/requestlist.component';
     WebcamModule,
     HttpClientModule,
     ReactiveFormsModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [UsersService],
   bootstrap: [AppComponent]
